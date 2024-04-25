@@ -1,0 +1,770 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 빌리플린 폰트 */
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset */
+::selection {
+    background-color: #DD2525;
+    color: #fff;
+}
+
+* { 
+    margin: 0;
+    padding: 0
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+li 
+{
+    list-style: none;
+}
+
+address, em, i {
+    font-style: normal;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* layout */
+#notice {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    font-size: 14px;
+}
+
+.notice-inner {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.notice-img {
+    width: 300px;
+    height: 300px;
+    background: url(../images/notice.png) no-repeat center;
+}
+
+.notice-close {
+    display: block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #F1CB00;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.notice-close:hover {
+    background-color: #DD2525;
+    text-decoration: underline;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 0.85vw;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #000;
+    padding-bottom: 100px;
+}
+
+.inner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    filter: brightness(70%);
+}
+
+.en {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.en2 {
+    font-family: "Cormorant Infant", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.md {
+    font-weight: 500;
+}
+
+.mainTitle {
+    font-size: 10vw;
+    color: #DD2525;
+}
+
+.bd {
+    font-weight: 600;
+}
+
+
+.highlight {
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #DD2525;
+    z-index: -2;
+}
+
+.highlight::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+    transition: all 1.5s;
+}
+
+.highlight.active::after {
+    left: 100%;
+}
+
+/* visual */
+.visual {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.visual video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.visual h1 {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    font-size: 12vw;
+    font-weight: 400;
+    line-height: 1;
+    color: #DD2525;
+    opacity: 0;
+}
+
+.visual h1 span {
+    display: block;
+    letter-spacing: -2px;
+    font-size: 5vw;
+    -webkit-text-stroke: 2px #DD2525;
+    color: transparent;
+}
+
+/* section.since */
+.since {
+    margin-bottom: 250px;
+}
+.since .inner h2 {
+    font-size: 10vw;
+    color: #DD2525;
+}
+
+.since .inner p.a {
+    font-size: 2vw;
+    margin: 20px 0 40px;
+}
+
+.since .inner .textBox {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.since .inner .textBox b {
+    font-size: 28px;
+}
+
+.since .inner .imgBox {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.since .inner .imgBox img {
+    width: 100%;
+}
+
+/* section.circle */
+.circle {
+    min-height: 200vh;
+    padding-bottom: 300px;
+}
+
+.circleWrap {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.circle span.a {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 750px;
+    height: 750px;
+    border-radius: 100%;
+    background-color: #fff;
+    /* z-index: 100; */
+}
+
+.circle p {
+    position: absolute;   
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3vw;
+    text-align: center;
+    color: #DD2525;
+}
+
+.circle p b {
+    font-size: 6vw;
+}
+
+.circle ul li {
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 600;
+    color: #212121;
+    opacity: 0;
+    margin-top: 100px;
+}
+
+.circle ul li .count {
+    font-size: 6vw;
+    color: #DD2525;
+}
+
+.circle .videoBox {
+    text-align: center;
+}
+
+/* section.casting */
+.casting .mainTitle {
+    padding: 100px 0 30px;
+    /* font-size: 6vw; */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.casting .castingWrap {
+    height: 100vh;
+}
+
+.castingWrap ul {
+    display: flex;
+    padding: 3% 30%;
+    box-sizing: border-box;
+}
+
+.castingWrap ul li {
+    position: relative;
+    /* flex-shrink 기본값이 1이라 너비가 자동으로 축소됨 */
+    flex-shrink: 0!important;
+    width: 700px;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.castingWrap ul li .imgBox {
+    width: 100%;
+}
+
+
+.castingWrap ul li img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.castingWrap ul li .textBox {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    text-shadow: 2px 2px 10px rgba(0,0,0,00.3s);
+    opacity: 0;
+}
+
+.castingWrap ul li .textBox .role {
+    font-size: 60px;
+}
+
+.castingWrap ul li .textBox .name {
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+/* inset을 활용해서 castingWrap img 잘라냄 */
+.castingWrap ul li .imgBox {
+    clip-path: inset(30%);
+}
+
+/* section.info */
+.info {
+    padding-top: 600px;
+}
+
+.info .inner .textBox {
+    position: relative;
+}
+
+.info .inner .textBox .imgBox {
+    width: 100%;
+    text-align: center;
+}
+
+.info .inner .textBox .imgBox img {
+    width: 100%;
+}
+
+.info .inner .textBox p.a {
+    font-size: 2vw;
+    margin: 20px 0 40px;
+}
+
+
+.info .inner .textBox p.b {
+    
+    font-family: 'GowunDodum-Regular';
+    position: relative;
+    padding: 50px 0 0 100px;
+    margin-top: 50px;
+    font-size: 1.8vw;
+    letter-spacing: -1px;
+    line-height: 1.3;
+}
+
+.info .inner .textBox p.b::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 72px;
+    height: 72px;
+    background: url('../images/ico-quotes.png') no-repeat center;
+    background-size: contain;
+}
+
+.info .inner .textBox p.b span {
+    position: relative;
+    display: block;
+    padding-top: 30px;
+    text-align: right;
+}
+
+
+.info .imgBox {
+    margin-top: 200px;
+}
+
+
+/* section.concept */
+
+/* imgBox.active */
+.gallery {
+    padding-top: 400px;
+}
+
+.gallery  ul li {
+    padding-bottom: 200px;
+}
+
+.gallery  ul li:nth-child(2n) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gallery ul li .imgBox {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+    width: 80%;
+}
+
+.gallery ul li .imgBox img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery ul li .imgBox::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #DD2525;
+    transition: all 0.8s;
+    transition-delay: 0.4s;
+    z-index: 2;
+}
+
+.gallery ul li .imgBox::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #5a2b2b;;
+    transition: all 0.8s;
+    z-index: 3;
+}
+
+.gallery ul li .imgBox::before {
+    height: 0;
+}
+
+.gallery ul li .imgBox::after {
+    height: 0;
+}
+
+.gallery ul li .imgBox::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #DD2525;
+    transition: all 0.8s;
+    transition-delay: 0.4s;
+    z-index: 2;
+}
+
+.gallery ul li .imgBox::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000;;
+    transition: all 0.8s;
+    z-index: 3;
+}
+
+.gallery ul li .imgBox.active::before {
+    height: 0;
+}
+
+.gallery ul li .imgBox.active::after {
+    height: 0;
+}
+
+
+/* footer */
+footer .inner .imgBox {
+    width: 100%;
+    text-align: center;
+}
+
+footer .inner .imgBox img {
+    width: 100%;
+    object-fit: contain;
+}
+
+footer .inner .textBox {
+    text-align: center;
+}
+
+footer .inner .textBox a {
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+
+footer .inner .textBox a:hover {
+    background-color: #DD2525;
+    border: 1px solid #000;
+    text-decoration: underline;
+}
+
+@media all and (max-width: 1366px) {
+    .inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .since .inner .textBox {
+        font-size: 18px;
+    }
+
+    .circle .videoBox {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .circle .videoBox video{
+        width: 100%;
+        object-fit: cover;
+    } 
+}
+
+@media all and (max-width: 1024px) {
+    .highlight {
+        background-color: #DD2525;
+    }
+    
+    .highlight::before {
+        display: none;
+    }
+    
+    .highlight::after {
+        display: none;
+    }
+    
+
+    .since .inner p.a {
+        font-size: 20px;
+    }
+
+    .since .inner .textBox {
+        font-size: 16px;
+    }
+    
+    .since .inner .textBox b {
+        font-size: 20px;
+    }
+
+    .circle p {
+        font-size: 5vw;
+    }
+
+    .circle p b {
+        font-size: 7vw;
+    }
+
+    .circle ul li {
+        font-size: 6vw;
+    }
+
+    .circle ul li .count {
+        font-size: 8vw;
+    }
+
+    .info .imgBox {
+        margin-top: 100px;
+    }
+
+    .info .inner .textBox p.a {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .info .inner .textBox p.b {
+        padding: 50px 0 0 60px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .info .inner .textBox p.b::before {
+        width: 48px;
+        height: 48px;
+    }
+
+    .gallery {
+        padding-top: 200px;
+    }
+
+    .gallery ul li {
+        padding-bottom: 100px;
+    }
+
+    /* casting */
+    .casting .castingWrap {
+        height: auto;
+    }
+
+    .casting .castingWrap ul {
+        flex-flow: row wrap;
+        padding: 0% 5%;
+        justify-content: space-between;
+    }
+
+    .casting .castingWrap ul li  {
+        width: 45%;
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .casting .castingWrap ul li:nth-child(2n) {
+        margin-top: 150px;
+    }
+
+    .castingWrap ul li .imgBox {
+        clip-path: none;
+    }
+
+    .castingWrap ul li .imgBox:hover img {
+        filter: none;
+    }
+
+    .castingWrap ul li .textBox {
+        width: 100%;
+        position: static;
+        transform: none;
+        text-align: center;
+        opacity: 1;
+    }
+
+    .castingWrap ul li .textBox .role {
+        font-size: 48px;
+        padding: 30px 0 10px;
+    }
+
+    .castingWrap ul li .textBox .name {
+        font-size: 24px;
+        padding-left: 0;
+    }
+
+    footer {
+        display: block;
+        padding-top: 200px;
+    }
+
+
+}
+
+@media all and (max-width: 768px) {
+    .mainTitle {
+        font-size: 12vw;
+    }
+
+    .visual h1 {
+        width: 80%;
+        font-size: 14vw;
+    }
+
+    .visual h1 span {
+        font-size: 7vw;
+    }
+
+    .since .inner h2 {
+        font-size: 12vw;
+    }
+
+    .circle p {
+        width: 90%;
+        font-size: 7vw;
+    }
+
+    .circle p b {
+        font-size: 9vw;
+    }
+
+    .circle ul li {
+        font-size: 7vw;
+    }
+
+    .circle ul li .count {
+        font-size: 9vw;
+    }
+
+    .info .inner .textBox p.b::before {
+        width: 36px;
+        height: 36px;
+    }
+
+    .info .inner .textBox p.b {
+        padding: 50px 0 0 35px;
+    }
+
+    .gallery ul li .imgBox {
+        width: 90%;
+    }
+
+}
+
+@media all and (max-width: 680px) {
+     /* casting */
+
+    .casting .castingWrap ul {
+        justify-content: space-around;
+    }
+
+    .casting .castingWrap ul li  {
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .casting .castingWrap ul li:nth-child(2n) {
+        margin-top: 100px;
+    }
+
+    .castingWrap ul li .textBox .role {
+        font-size: 36px;
+        padding: 20px 0 10px;
+    }
+
+    .castingWrap ul li .textBox .name {
+        font-size: 18px;
+    }
+
+    .gallery {
+        padding-top: 100px;
+    }
+
+
+}
