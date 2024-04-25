@@ -153,10 +153,10 @@ $(document).ready(function(){
                 scrub: 1,
             }
         })
-        .to(list, {
-            opacity: 1,
+        .from(list, {
+            opacity: 0,
             duration: 5,
-            margin: 0
+            margin: '100px'
         },3)
     })
     
@@ -294,25 +294,7 @@ $(document).ready(function(){
 
 
         },
-        "(min-width: 320px)": function() {
-            gsap.from('.castingWrap',
-            {
-                scrollTrigger: {
-                    trigger: '.casting',
-                    start: 'top bottom',
-                    end: 'top bottom',
-                    scrub: 1,
-                    pin: true,
-                    markers: true,
-                    id: "title"
-                },
-                yPercent: 100,
-                opacity: 0,
-                duration: 5
-            }, 0)
-
-
-
+        "(min-width: 500px)": function() {
 
         }
         

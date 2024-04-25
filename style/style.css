@@ -133,6 +133,7 @@ img {
 }
 
 .mainTitle {
+    padding-bottom: 50px;
     font-size: 10vw;
     color: #DD2525;
 }
@@ -284,8 +285,6 @@ img {
     font-size: 4vw;
     font-weight: 600;
     color: #212121;
-    opacity: 0;
-    margin-top: 100px;
 }
 
 .circle ul li .count {
@@ -414,13 +413,11 @@ img {
     margin-top: 200px;
 }
 
-
-/* section.concept */
-
-/* imgBox.active */
+/* gallery*/
 .gallery {
     padding-top: 400px;
 }
+
 
 .gallery  ul li {
     padding-bottom: 200px;
@@ -765,6 +762,54 @@ footer .inner .textBox a:hover {
     .gallery {
         padding-top: 100px;
     }
+
+}
+
+@media all and (max-width: 500px) {
+    body {
+        min-width: 320px;
+    }
+
+    .mainTitle {
+        padding-bottom: 20px;
+        font-size: 12vw;
+    }
+
+    .visual h1 {
+        width: 85%;
+        font-size: 16vw;
+    }
+
+    .visual h1 span {
+        font-size: 9vw;
+    }
+
+    .since {
+        margin-bottom: 0px;
+    }
+
+    .since .inner .textBox p{
+        padding-bottom: 15px;
+    }
+
+    .since .inner .imgBox {
+        padding-top: 50px;
+    }
+    
+
+    .circle p {
+        width: 90%;
+        font-size: 9vw;
+    }
+
+    .circle p b {
+        font-size: 12vw;
+    }
+
+    .circle ul li {
+        padding-bottom: 50px;
+    }
+
 
 
 }
