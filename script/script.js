@@ -87,7 +87,8 @@ $(document).ready(function(){
 
     /* ========== casting ========== */
     ScrollTrigger.matchMedia({
-        "(min-width: 1025px)": function() {
+        "(min-width: 1025px)": function()
+        {
             gsap.from('.casting .mainTitle',
             {
                 scrollTrigger: {
@@ -201,7 +202,8 @@ $(document).ready(function(){
 
 
         },
-        "(min-width: 769px)": function() {
+        "(min-width: 769px)": function()
+        {
             //circle
             gsap.timeline({
                 scrollTrigger: {
@@ -342,10 +344,5 @@ $(document).ready(function(){
         opacity: 0,
         duration: 3,
     })
-
-    
-   
-
-    
 
 })

@@ -25,8 +25,7 @@ a {
     text-decoration: inherit;
 }
 
-li 
-{
+li {
     list-style: none;
 }
 
@@ -142,7 +141,6 @@ img {
     font-weight: 600;
 }
 
-
 .highlight {
     position: relative;
     overflow: hidden;
@@ -175,7 +173,7 @@ img {
     left: 100%;
 }
 
-/* visual */
+/* section.visual */
 .visual {
     position: relative;
     padding: 0;
@@ -410,12 +408,11 @@ img {
     text-align: right;
 }
 
-
 .info .imgBox {
     margin-top: 200px;
 }
 
-/* gallery*/
+/* section.gallery */
 .gallery {
     padding-top: 220px;
 }
@@ -547,6 +544,7 @@ footer .inner .textBox a:hover {
         margin: 0 auto;
     }
 
+    /* section.circle */
     .circle .videoBox {
         width: 90%;
         margin: 0 auto;
@@ -556,6 +554,7 @@ footer .inner .textBox a:hover {
         object-fit: cover;
     }
     
+    /* section.info */
     .info .inner .textBox p.b::before {
         width: 60px;
         height: 60px;
@@ -579,7 +578,7 @@ footer .inner .textBox a:hover {
         display: none;
     }
     
-
+    /* section.since */
     .since .inner .textBox {
         font-size: 18px;
     }
@@ -588,6 +587,7 @@ footer .inner .textBox a:hover {
         font-size: 22px;
     }
 
+    /* section.info */
     .info {
         padding-top: 200px;
     }
@@ -610,7 +610,7 @@ footer .inner .textBox a:hover {
         height: 48px;
     }
 
-    /* casting */
+    /* section.casting */
     .casting .castingWrap {
         height: auto;
     }
@@ -659,6 +659,7 @@ footer .inner .textBox a:hover {
         padding-left: 0;
     }
 
+    /* section.gallery */
     .gallery {
         padding-top: 150px;
     }
@@ -680,7 +681,7 @@ footer .inner .textBox a:hover {
         padding-bottom: 20px;
     }
 
-    /* visual */
+    /* section.visual */
     .visual h1 {
         width: 80%;
         font-size: 14vw;
@@ -690,7 +691,7 @@ footer .inner .textBox a:hover {
         font-size: 7vw;
     }
 
-    /* since */
+    /* section.since */
     .since {
         margin-bottom: 50px;
     }
@@ -716,8 +717,7 @@ footer .inner .textBox a:hover {
         padding-top: 50px;
     }
 
-    /* circle */
-
+    /* section.circle */
     .circle span.a {
         width: 400px;
         height: 400px;
@@ -727,7 +727,7 @@ footer .inner .textBox a:hover {
         font-size: 9vw;
     }
 
-    /* info */
+    /* section.info */
     .info {
         padding-top: 100px;
     }
@@ -745,7 +745,7 @@ footer .inner .textBox a:hover {
         padding-top: 20px;
     }
 
-    /* gallery */
+    /* section.gallery */
     .gallery ul li .imgBox {
         width: 90%;
         padding-top: 50px;
@@ -758,6 +758,7 @@ footer .inner .textBox a:hover {
 }
 
 @media all and (max-width: 768px) {
+    /* section.circle */
     .circle {
         min-height: auto;
         margin-top: 70px;
@@ -796,6 +797,7 @@ footer .inner .textBox a:hover {
         margin: 70px auto 0;
     }
 
+    /* section.casting */
     .casting .mainTitle {
         padding: 70px 0 0;
         text-transform: uppercase;
@@ -809,7 +811,7 @@ footer .inner .textBox a:hover {
         min-width: 320px;
     }
 
-    /* since */
+    /* section.since */
     .since .inner p.a {
         font-size: 22px;
         margin: 0 0 10px;
@@ -819,7 +821,7 @@ footer .inner .textBox a:hover {
         font-size: 18px;
     }
 
-    /* circle */
+    /* section.circle */
     .circle {
         min-height: auto;
         padding-bottom: 100px;
@@ -834,8 +836,7 @@ footer .inner .textBox a:hover {
         font-size: 32px;
     }
 
- 
-    /* casting */
+    /* section.casting */
     .casting .castingWrap ul {
         justify-content: space-around;
     }
@@ -858,7 +859,7 @@ footer .inner .textBox a:hover {
         font-size: 18px;
     }
 
-    /* info */
+    /* section.info */
     .info .inner .textBox p.b::before {
         width: 20px;
         height: 20px;
@@ -873,7 +874,7 @@ footer .inner .textBox a:hover {
         padding-top: 10px;
     }
 
-    /* gallery */
+    /* section.gallery */
     .gallery {
         padding-top: 70px;
     }
