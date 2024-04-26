@@ -674,14 +674,6 @@ footer .inner .textBox a:hover {
  
 }
 
-
-/* 1650px ~ 1301px */
-/* 1300px ~ 1025px */
-/* 1024px ~ 801px*/
-/* pc 800px ~ 501px */
-/* pc 500px ~ 401px */
-/* pc 400px ~ 301px */
-
 @media all and (max-width: 800px) {
     .mainTitle {
         font-size: 12vw;
@@ -765,72 +757,6 @@ footer .inner .textBox a:hover {
 
 }
 
-@media all and (max-width: 500px) {
-    /* since */
-    .since .inner p.a {
-        font-size: 22px;
-        margin: 0 0 10px;
-    }
-
-    .since .inner .textBox b {
-        font-size: 18px;
-    }
-
-    /* circle */
-    .circle {
-        min-height: auto;
-        padding-bottom: 100px;
-    }
-
-    .circle ul li {
-        padding-bottom: 20px;
-    }
-    
-    /* casting */
-    .casting .castingWrap ul {
-        justify-content: space-around;
-    }
-
-    .casting .castingWrap ul li  {
-        width: 90%;
-        margin-top: 100px;
-    }
-
-    .casting .castingWrap ul li:nth-child(2n) {
-        margin-top: 100px;
-    }
-
-    .castingWrap ul li .textBox .role {
-        font-size: 36px;
-        padding: 20px 0 10px;
-    }
-
-    .castingWrap ul li .textBox .name {
-        font-size: 18px;
-    }
-
-    /* info */
-    .info .inner .textBox p.b::before {
-        width: 20px;
-        height: 20px;
-    }
-
-    .info .inner .textBox p.b {
-        font-size: 16px;
-        padding: 20px 0 0 20px;
-    }
-
-    .info .inner .textBox p.b span {
-        padding-top: 10px;
-    }
-
-    /* gallery */
-    .gallery {
-        padding-top: 70px;
-    }
-
-}
-
 @media all and (max-width: 768px) {
     .circle {
         min-height: auto;
@@ -883,28 +809,73 @@ footer .inner .textBox a:hover {
         min-width: 320px;
     }
 
-    .mainTitle {
+    /* since */
+    .since .inner p.a {
+        font-size: 22px;
+        margin: 0 0 10px;
+    }
+
+    .since .inner .textBox b {
+        font-size: 18px;
+    }
+
+    /* circle */
+    .circle {
+        min-height: auto;
+        padding-bottom: 100px;
+    }
+
+    .circle ul li {
         padding-bottom: 20px;
-        font-size: 12vw;
+        font-size: 24px;
     }
 
-    .visual h1 {
-        width: 85%;
-        font-size: 16vw;
+    .circle ul li .count {
+        font-size: 32px;
     }
 
-    .visual h1 span {
-        font-size: 9vw;
+ 
+    /* casting */
+    .casting .castingWrap ul {
+        justify-content: space-around;
     }
 
-    .since {
-        margin-bottom: 0px;
+    .casting .castingWrap ul li  {
+        width: 90%;
+        margin-top: 100px;
     }
 
-    .since .inner .textBox p{
-        padding-bottom: 15px;
+    .casting .castingWrap ul li:nth-child(2n) {
+        margin-top: 100px;
     }
 
-   
+    .castingWrap ul li .textBox .role {
+        font-size: 36px;
+        padding: 20px 0 10px;
+    }
+
+    .castingWrap ul li .textBox .name {
+        font-size: 18px;
+    }
+
+    /* info */
+    .info .inner .textBox p.b::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .info .inner .textBox p.b {
+        font-size: 16px;
+        padding: 20px 0 0 20px;
+    }
+
+    .info .inner .textBox p.b span {
+        padding-top: 10px;
+    }
+
+    /* gallery */
+    .gallery {
+        padding-top: 70px;
+    }
 
 }
