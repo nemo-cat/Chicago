@@ -309,6 +309,7 @@ img {
 
 .castingWrap ul {
     display: flex;
+    height: 100%;
     padding: 3% 30%;
     box-sizing: border-box;
 }
