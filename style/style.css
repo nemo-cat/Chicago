@@ -304,12 +304,14 @@ img {
 }
 
 .casting .castingWrap {
+    top: 0;
+    left: 0;
     height: 100vh;
 }
 
 .castingWrap ul {
     display: flex;
-    padding: 0 30% 3%;
+    padding: 3% 30%;
     box-sizing: border-box;
 }
 
