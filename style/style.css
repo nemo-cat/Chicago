@@ -831,9 +831,10 @@ footer .inner .textBox a:hover {
 
 @media all and (max-width: 768px) {
     .circle {
-        background-color: #fff;
         min-height: auto;
+        margin-top: 70px;
         padding-bottom: 70px;
+        background-color: #fff;
     }
 
     .circleWrap {
@@ -865,6 +866,12 @@ footer .inner .textBox a:hover {
     .circle .videoBox {
         width: 90%;
         margin: 70px auto 0;
+    }
+
+    .casting .mainTitle {
+        padding: 70px 0 0;
+        text-transform: uppercase;
+        text-align: center;
     }
 }
 
