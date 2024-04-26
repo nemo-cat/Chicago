@@ -262,21 +262,21 @@ img {
     height: 750px;
     border-radius: 100%;
     background-color: #fff;
-    /* z-index: 100; */
 }
 
 .circle p {
     position: absolute;   
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 3vw;
+    width: 90%;
+    font-size: 8vw;
     text-align: center;
     color: #DD2525;
 }
 
 .circle p b {
-    font-size: 6vw;
+    font-size: 12vw;
 }
 
 .circle ul li {
@@ -586,22 +586,6 @@ footer .inner .textBox a:hover {
         font-size: 22px;
     }
 
-    .circle p {
-        font-size: 5vw;
-    }
-
-    .circle p b {
-        font-size: 7vw;
-    }
-
-    .circle ul li {
-        font-size: 6vw;
-    }
-
-    .circle ul li .count {
-        font-size: 8vw;
-    }
-
     .info {
         padding-top: 200px;
     }
@@ -745,20 +729,6 @@ footer .inner .textBox a:hover {
         height: 400px;
     }
 
-
-    .circle p {
-        width: 90%;
-        font-size: 7vw;
-    }
-
-    .circle p b {
-        font-size: 9vw;
-    }
-
-    .circle ul li {
-        font-size: 7vw;
-    }
-
     .circle ul li .count {
         font-size: 9vw;
     }
@@ -858,6 +828,46 @@ footer .inner .textBox a:hover {
     }
 
 }
+
+@media all and (max-width: 768px) {
+    .circle {
+        background-color: #fff;
+        min-height: auto;
+        padding-bottom: 70px;
+    }
+
+    .circleWrap {
+        height: auto;
+        overflow: visible;
+    }
+
+    .circle span.a {
+        display: none;
+    }
+
+    .circle p {
+        position: static;
+        width: 100%;
+        padding: 70px 0 50px;
+        transform: none;
+        z-index: 10;
+    }
+
+    .circle ul li {
+        padding: 20px 0;
+        font-size: 34px;
+    }
+
+    .circle ul li .count {
+        font-size: 40px;
+    }
+
+    .circle .videoBox {
+        width: 90%;
+        margin: 70px auto 0;
+    }
+}
+
 
 @media all and (max-width: 500px) {
     body {

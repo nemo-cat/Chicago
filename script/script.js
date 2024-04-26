@@ -84,97 +84,6 @@ $(document).ready(function(){
         duration: 5,
     })
 
-    //circle
-    gsap.timeline({
-        scrollTrigger: {
-            trigger: '.circleWrap',
-            start: '-30% 80%',
-            end: '50% 50%',
-            scrub: 1,
-        }
-    })
-    .from('.circleWrap span', {
-        width: 0,
-        height: 0,
-        top: 0,
-        opacity: 0,
-        ease: 'none',
-        duration: 5,
-    })
-    .from('.circleWrap p', {
-        top: '1000px',
-        opacity: 0,
-        ease: 'none',
-        duration: 5,
-    },3)
- 
-    gsap.timeline({
-        scrollTrigger: {
-            trigger: '.circleWrap',
-            start: '50% bottom',
-            end: '180vh',
-            scrub: 1,
-        }
-    })
-    .to('.circleWrap span', {
-        ease: 'none',
-        duration: 5,
-        scale: 10
-    },3)
-
-
-    gsap.to('.circle', {
-        scrollTrigger: {
-            trigger: '.circleWrap',
-            start: 'bottom bottom',
-            end: 'bottom bottom',
-            scrub: 1,
-        },
-        backgroundColor: '#fff',
-    })
-
-    gsap.from('.circle video', {
-        scrollTrigger: {
-            trigger: '.circle .videoBox',
-            start: '-20% bottom',
-            end: 'bottom bottom',
-            scrub: 1,
-        },
-        scale: 0
-    })
-
-    gsap.utils.toArray('.circle ul li').forEach(function(list)
-    {
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: list,
-                start: 'top bottom',
-                end: 'bottom bottom',
-                scrub: 1,
-            }
-        })
-        .from(list, {
-            opacity: 0,
-            duration: 5,
-            margin: '100px'
-        },3)
-    })
-    
-
-    gsap.timeline({
-        scrollTrigger: {
-            trigger: '.circle',
-            start: 'bottom bottom',
-            end: 'bottom 70%',
-            scrub: 1,
-        }
-    })
-    .to('.circle', {
-        backgroundColor: '#000',
-        ease: 'none',
-        duration: 3
-    })
-
 
     /* ========== casting ========== */
     ScrollTrigger.matchMedia({
@@ -292,7 +201,97 @@ $(document).ready(function(){
 
 
         },
-        "(min-width: 500px)": function() {
+        "(min-width: 769px)": function() {
+            //circle
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.circleWrap',
+                    start: '-30% 80%',
+                    end: '50% 50%',
+                    scrub: 1,
+                }
+            })
+            .from('.circleWrap span', {
+                width: 0,
+                height: 0,
+                top: 0,
+                opacity: 0,
+                ease: 'none',
+                duration: 5,
+            })
+            .from('.circleWrap p', {
+                top: '1000px',
+                opacity: 0,
+                ease: 'none',
+                duration: 5,
+            },3)
+
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.circleWrap',
+                    start: '50% bottom',
+                    end: '180vh',
+                    scrub: 1,
+                }
+            })
+            .to('.circleWrap span', {
+                ease: 'none',
+                duration: 5,
+                scale: 10
+            },3)
+
+
+            gsap.to('.circle', {
+                scrollTrigger: {
+                    trigger: '.circleWrap',
+                    start: 'bottom bottom',
+                    end: 'bottom bottom',
+                    scrub: 1,
+                },
+                backgroundColor: '#fff',
+            })
+
+            gsap.from('.circle video', {
+                scrollTrigger: {
+                    trigger: '.circle .videoBox',
+                    start: '-20% bottom',
+                    end: 'top bottom',
+                    scrub: 1,
+                },
+                scale: 0
+            })
+
+            gsap.utils.toArray('.circle ul li').forEach(function(list)
+            {
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: list,
+                        start: 'top bottom',
+                        end: 'bottom bottom',
+                        scrub: 1,
+                    }
+                })
+                .from(list, {
+                    opacity: 0,
+                    duration: 5,
+                    margin: '100px'
+                },3)
+            })
+
+
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.circle',
+                    start: 'bottom bottom',
+                    end: 'bottom 70%',
+                    scrub: 1,
+                }
+            })
+            .to('.circle', {
+                backgroundColor: '#000',
+                ease: 'none',
+                duration: 3
+            })
 
         }
         
