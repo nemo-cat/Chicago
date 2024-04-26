@@ -219,8 +219,8 @@ img {
 }
 
 .since .inner p.a {
-    font-size: 2vw;
-    margin: 20px 0 40px;
+    font-size: 32px;
+    margin: 0 0 40px;
 }
 
 .since .inner .textBox {
@@ -229,7 +229,7 @@ img {
 }
 
 .since .inner .textBox b {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .since .inner .imgBox {
@@ -282,13 +282,13 @@ img {
 .circle ul li {
     padding-bottom: 100px;
     text-align: center;
-    font-size: 4vw;
+    font-size: 52px;
     font-weight: 600;
     color: #212121;
 }
 
 .circle ul li .count {
-    font-size: 6vw;
+    font-size: 68px;
     color: #DD2525;
 }
 
@@ -299,7 +299,6 @@ img {
 /* section.casting */
 .casting .mainTitle {
     padding: 100px 0 30px;
-    /* font-size: 6vw; */
     text-transform: uppercase;
     text-align: center;
 }
@@ -374,8 +373,9 @@ img {
 }
 
 .info .inner .textBox p.a {
-    font-size: 2vw;
-    margin: 20px 0 40px;
+    margin: 0 0 40px;
+    font-size: 32px;
+    line-height: 1.6;
 }
 
 
@@ -385,9 +385,9 @@ img {
     position: relative;
     padding: 50px 0 0 100px;
     margin-top: 50px;
-    font-size: 1.8vw;
+    font-size: 24px;
     letter-spacing: -1px;
-    line-height: 1.3;
+    line-height: 1.6;
 }
 
 .info .inner .textBox p.b::before {
@@ -415,7 +415,7 @@ img {
 
 /* gallery*/
 .gallery {
-    padding-top: 400px;
+    padding-top: 220px;
 }
 
 
@@ -537,14 +537,12 @@ footer .inner .textBox a:hover {
     text-decoration: underline;
 }
 
-@media all and (max-width: 1366px) {
+
+/* 1400px ~ 1025px */
+@media all and (max-width: 1400px) {
     .inner {
         width: 90%;
         margin: 0 auto;
-    }
-
-    .since .inner .textBox {
-        font-size: 18px;
     }
 
     .circle .videoBox {
@@ -554,7 +552,16 @@ footer .inner .textBox a:hover {
     .circle .videoBox video{
         width: 100%;
         object-fit: cover;
-    } 
+    }
+    
+    .info .inner .textBox p.b::before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .info .inner .textBox p.b {
+        padding: 50px 0 0 80px;
+    }
 }
 
 @media all and (max-width: 1024px) {
@@ -571,16 +578,12 @@ footer .inner .textBox a:hover {
     }
     
 
-    .since .inner p.a {
-        font-size: 20px;
-    }
-
     .since .inner .textBox {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .since .inner .textBox b {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .circle p {
@@ -599,32 +602,26 @@ footer .inner .textBox a:hover {
         font-size: 8vw;
     }
 
+    .info {
+        padding-top: 200px;
+    }
+
     .info .imgBox {
         margin-top: 100px;
     }
 
     .info .inner .textBox p.a {
         font-size: 20px;
-        line-height: 1.6;
     }
 
     .info .inner .textBox p.b {
+        font-size: 18px;
         padding: 50px 0 0 60px;
-        font-size: 16px;
-        line-height: 1.6;
     }
 
     .info .inner .textBox p.b::before {
         width: 48px;
         height: 48px;
-    }
-
-    .gallery {
-        padding-top: 200px;
-    }
-
-    .gallery ul li {
-        padding-bottom: 100px;
     }
 
     /* casting */
@@ -676,19 +673,36 @@ footer .inner .textBox a:hover {
         padding-left: 0;
     }
 
+    .gallery {
+        padding-top: 150px;
+    }
+
+    .gallery ul li {
+        padding-bottom: 70px;
+    }
+
     footer {
         display: block;
-        padding-top: 200px;
+        padding-top: 70px;
     }
-
-
+ 
 }
 
-@media all and (max-width: 768px) {
+
+/* 1650px ~ 1301px */
+/* 1300px ~ 1025px */
+/* 1024px ~ 801px*/
+/* pc 800px ~ 501px */
+/* pc 500px ~ 401px */
+/* pc 400px ~ 301px */
+
+@media all and (max-width: 800px) {
     .mainTitle {
         font-size: 12vw;
+        padding-bottom: 20px;
     }
 
+    /* visual */
     .visual h1 {
         width: 80%;
         font-size: 14vw;
@@ -698,9 +712,39 @@ footer .inner .textBox a:hover {
         font-size: 7vw;
     }
 
+    /* since */
+    .since {
+        margin-bottom: 50px;
+    }
+
     .since .inner h2 {
         font-size: 12vw;
     }
+
+    .since .inner p.a {
+        font-size: 28px;
+        margin: 0 0 20px;
+    }
+
+    .since .inner .textBox {
+        font-size: 16px;
+    }
+
+    .since .inner .textBox b {
+        font-size: 20px;
+    }
+
+    .since .inner .imgBox {
+        padding-top: 50px;
+    }
+
+    /* circle */
+
+    .circle span.a {
+        width: 400px;
+        height: 400px;
+    }
+
 
     .circle p {
         width: 90%;
@@ -719,24 +763,58 @@ footer .inner .textBox a:hover {
         font-size: 9vw;
     }
 
+    /* info */
+    .info {
+        padding-top: 100px;
+    }
+
     .info .inner .textBox p.b::before {
-        width: 36px;
-        height: 36px;
+        width: 28px;
+        height: 28px;
     }
 
     .info .inner .textBox p.b {
-        padding: 50px 0 0 35px;
+        padding: 30px 0 0 25px;
     }
 
+    .info .inner .textBox p.b span {
+        padding-top: 20px;
+    }
+
+    /* gallery */
     .gallery ul li .imgBox {
         width: 90%;
+        padding-top: 50px;
+    }
+
+    .gallery ul li {
+        padding-bottom: 50px;
     }
 
 }
 
-@media all and (max-width: 680px) {
-     /* casting */
+@media all and (max-width: 500px) {
+    /* since */
+    .since .inner p.a {
+        font-size: 22px;
+        margin: 0 0 10px;
+    }
 
+    .since .inner .textBox b {
+        font-size: 18px;
+    }
+
+    /* circle */
+    .circle {
+        min-height: auto;
+        padding-bottom: 100px;
+    }
+
+    .circle ul li {
+        padding-bottom: 20px;
+    }
+    
+    /* casting */
     .casting .castingWrap ul {
         justify-content: space-around;
     }
@@ -759,8 +837,24 @@ footer .inner .textBox a:hover {
         font-size: 18px;
     }
 
+    /* info */
+    .info .inner .textBox p.b::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .info .inner .textBox p.b {
+        font-size: 16px;
+        padding: 20px 0 0 20px;
+    }
+
+    .info .inner .textBox p.b span {
+        padding-top: 10px;
+    }
+
+    /* gallery */
     .gallery {
-        padding-top: 100px;
+        padding-top: 70px;
     }
 
 }
@@ -792,24 +886,6 @@ footer .inner .textBox a:hover {
         padding-bottom: 15px;
     }
 
-    .since .inner .imgBox {
-        padding-top: 50px;
-    }
-    
-
-    .circle p {
-        width: 90%;
-        font-size: 9vw;
-    }
-
-    .circle p b {
-        font-size: 12vw;
-    }
-
-    .circle ul li {
-        padding-bottom: 50px;
-    }
-
-
+   
 
 }

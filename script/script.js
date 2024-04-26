@@ -179,18 +179,6 @@ $(document).ready(function(){
     /* ========== casting ========== */
     ScrollTrigger.matchMedia({
         "(min-width: 1025px)": function() {
-            gsap.utils.toArray('.highlight').forEach(function(highlight)
-            {
-                gsap.from(highlight, {
-                    scrollTrigger: {
-                        trigger: highlight,
-                        start: '0% bottom',
-                        scrub: 1,
-                        toggleClass: {targets: highlight, className: 'active'}, //해당 imgBox에 클래스를 부여/제거
-                    },
-                }, )
-            })
-
             gsap.from('.casting .mainTitle',
             {
                 scrollTrigger: {
@@ -198,7 +186,6 @@ $(document).ready(function(){
                     start: 'top top',
                     end: 'top top',
                     scrub: 1,
-                    id: "title"
                 },
                 scale: 5,
                 opacity: 0,
@@ -291,6 +278,17 @@ $(document).ready(function(){
 
             })
 
+            gsap.utils.toArray('.highlight').forEach(function(highlight)
+            {
+                gsap.from(highlight, {
+                    scrollTrigger: {
+                        trigger: highlight,
+                        start: '0% bottom',
+                        scrub: 1,
+                        toggleClass: {targets: highlight, className: 'active'}, //해당 imgBox에 클래스를 부여/제거
+                    },
+                }, )
+            })
 
 
         },
