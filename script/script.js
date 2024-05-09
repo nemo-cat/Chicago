@@ -87,7 +87,7 @@ $(document).ready(function(){
 
     /* ========== casting ========== */
     ScrollTrigger.matchMedia({
-        "(min-width: 1025px)": function()
+        "(min-width: 1024px)": function()
         {
             gsap.from('.casting .mainTitle',
             {
@@ -202,7 +202,7 @@ $(document).ready(function(){
 
 
         },
-        "(min-width: 769px)": function()
+        "(min-width: 768px)": function()
         {
             //circle
             gsap.timeline({
