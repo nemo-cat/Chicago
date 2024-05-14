@@ -75,7 +75,6 @@ $(document).ready(function(){
             start: 'top 80%',
             end: '20% 50%',
             scrub: 1,
-            /* markers:true */
         }
     })
     .from('.since', {
@@ -113,10 +112,9 @@ $(document).ready(function(){
                     pin: true,
                     scrub: 1,
                     start: '60% center',
-                    end: '300%', //뷰포트 높이의 300%, 숫자가 클수록 느려짐,
+                    end: '400%', //뷰포트 높이의 300%, 숫자가 클수록 느려짐,
                 }
             });
-
             //cating imgBox 모션
             gsap.utils.toArray('.castingWrap ul .imgBox').forEach(function(imgBox){
                 //01. imgBox 커지는 애니메이션 , 화면 오른쪽에서 시작해서 중앙에서 끝나는 애니메이션
@@ -338,7 +336,6 @@ $(document).ready(function(){
             start: 'bottom bottom',
             end: 'bottom bottom',
             scrub: 1,
-            //markers: true,
         },
         scale: 0, 
         opacity: 0,
